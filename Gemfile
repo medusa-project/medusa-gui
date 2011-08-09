@@ -19,6 +19,7 @@ end
 # JavasScript libs
 gem 'jquery-rails'
 gem 'modernizr-rails'
+gem 'rails-backbone'
 
 # Stylesheet libs
 # gem 'blueprint-rails'
