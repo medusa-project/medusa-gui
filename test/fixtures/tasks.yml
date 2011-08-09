@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  taskuuid: MyString
+  job_id: 
+  fileuuid: MyString
+  filename: MyString
+  exec_field: MyString
+  arguments: MyString
+  starttime: 2011-08-09 15:22:47
+  client: MyString
+  endtime: 2011-08-09 15:22:47
+  stdout: MyText
+  stderror: MyText
+  exitcode: 1
+
+two:
+  taskuuid: MyString
+  job_id: 
+  fileuuid: MyString
+  filename: MyString
+  exec_field: MyString
+  arguments: MyString
+  starttime: 2011-08-09 15:22:47
+  client: MyString
+  endtime: 2011-08-09 15:22:47
+  stdout: MyText
+  stderror: MyText
+  exitcode: 1
