@@ -10,9 +10,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110809202411) do
+ActiveRecord::Schema.define(:version => 20110809212139) do
 
-  create_table "job_step_completeds", :force => true do |t|
+  create_table "completed_job_steps", :force => true do |t|
     t.integer  "job_id"
     t.datetime "completedtime"
     t.string   "step"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20110809202411) do
     t.datetime "updated_at"
   end
 
-  add_index "job_step_completeds", ["job_id"], :name => "index_job_step_completeds_on_job_id"
+  add_index "completed_job_steps", ["job_id"], :name => "index_completed_job_steps_on_job_id"
 
   create_table "jobs", :force => true do |t|
     t.string   "jobuuid"
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(:version => 20110809202411) do
 
   create_table "tasks", :force => true do |t|
     t.string   "taskuuid"
-    t.integer  "job_id_id"
+    t.integer  "job_id"
     t.string   "fileuuid"
     t.string   "filename"
     t.string   "exec_field"
@@ -50,6 +50,6 @@ ActiveRecord::Schema.define(:version => 20110809202411) do
     t.datetime "updated_at"
   end
 
-  add_index "tasks", ["job_id_id"], :name => "index_tasks_on_job_id_id"
+  add_index "tasks", ["job_id"], :name => "index_tasks_on_job_id"
 
 end

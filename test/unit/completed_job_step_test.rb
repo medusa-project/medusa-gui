@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class JobStepCompletedTest < ActiveSupport::TestCase
+class CompletedJobStepTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

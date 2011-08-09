@@ -2,7 +2,7 @@
 
 one:
   taskuuid: MyString
-  job_id: 
+  job:
   fileuuid: MyString
   filename: MyString
   exec_field: MyString
@@ -16,7 +16,7 @@ one:
 
 two:
   taskuuid: MyString
-  job_id: 
+  job:
   fileuuid: MyString
   filename: MyString
   exec_field: MyString
