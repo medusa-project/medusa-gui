@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,46 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110809212139) do
-
-  create_table "completed_job_steps", :force => true do |t|
-    t.integer  "job_id"
-    t.datetime "completedtime"
-    t.string   "step"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "completed_job_steps", ["job_id"], :name => "index_completed_job_steps_on_job_id"
-
-  create_table "jobs", :force => true do |t|
-    t.string   "jobuuid"
-    t.string   "jobtype"
-    t.string   "directory"
-    t.string   "sipuuid"
-    t.string   "currentstep"
-    t.boolean  "hidden"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(:version => 20110920205909) do
 
   create_table "tasks", :force => true do |t|
-    t.string   "taskuuid"
-    t.integer  "job_id"
-    t.string   "fileuuid"
-    t.string   "filename"
-    t.string   "exec_field"
-    t.string   "arguments"
-    t.datetime "starttime"
-    t.string   "client"
-    t.datetime "endtime"
-    t.text     "stdout"
-    t.text     "stderror"
-    t.integer  "exitcode"
+    t.string   "name"
+    t.string   "description"
+    t.string   "log"
+    t.integer  "status"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "tasks", ["job_id"], :name => "index_tasks_on_job_id"
 
 end

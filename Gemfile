@@ -1,38 +1,19 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc5'
+gem 'rails', '3.1.0'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'arel', '2.1.4'
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails', "~> 3.1.0.rc"
-  gem 'coffee-rails', "~> 3.1.0.rc"
-  gem 'uglifier'
-end
+# Asset template engines
+gem 'sass-rails', "~> 3.1.0.rc"
+gem 'coffee-script'
+gem 'uglifier'
 
-# JavasScript libs
 gem 'jquery-rails'
-gem 'modernizr-rails'
-gem 'rails-backbone'
-
-# Stylesheet libs
-# gem 'blueprint-rails'
-
-# Ajax request CoffeeScript support
-# gem 'coffeebeans'
-
-# Heroku deployment requirements
-# group :production do
-#   gem 'therubyracer-heroku'
-#   gem 'pg'
-# end
-
+gem 'ejs'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -43,7 +24,23 @@ gem 'rails-backbone'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+# http://blog.davidchelimsky.net/2010/07/11/rspec-rails-2-generators-and-rake-tasks/
+group :development, :test do
+  gem "rspec-rails", "~> 2.6.1"
+  gem "ruby-debug19"
+end
+
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+
+  gem "capybara", "~> 1.0.1"
+  gem "selenium-webdriver", "~> 2.5.0"
+  gem 'cucumber-rails', "~> 1.0.2"
+  gem "factory_girl_rails"
+  gem "bourne"
+  gem "database_cleaner"
+  gem "nokogiri"
+  gem "shoulda"
+  gem "launchy"
 end

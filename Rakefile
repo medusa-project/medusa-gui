@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-MedusaGui::Application.load_tasks
+MedusaApp::Application.load_tasks
