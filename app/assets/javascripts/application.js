@@ -11,6 +11,8 @@
 //= require backbone
 //= require backbone.authtokenadapter
 //
+//= require medusa_app
+//
 //= require_tree ./models
 //= require_tree ./collections
 //= require_tree ./views
