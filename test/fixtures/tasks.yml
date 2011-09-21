@@ -1,29 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
 
 one:
-  taskuuid: MyString
-  job:
-  fileuuid: MyString
-  filename: MyString
-  exec_field: MyString
-  arguments: MyString
-  starttime: 2011-08-09 15:22:47
-  client: MyString
-  endtime: 2011-08-09 15:22:47
-  stdout: MyText
-  stderror: MyText
-  exitcode: 1
+  name: Checksummer
+  description: Generates checksums
+  log: MD5 checksum generated for bitstream1 19804233a7829a70ddf46b598e58caad
+  status: 1
+  created_at: 2011-09-21 15:22:47
+  updated_at: 2011-09-21 15:22:47
 
 two:
-  taskuuid: MyString
-  job:
-  fileuuid: MyString
-  filename: MyString
-  exec_field: MyString
-  arguments: MyString
-  starttime: 2011-08-09 15:22:47
-  client: MyString
-  endtime: 2011-08-09 15:22:47
-  stdout: MyText
-  stderror: MyText
-  exitcode: 1
+  name: Handle Registration
+  description: Registers handle
+  log: Handle registered for item bamboo:550e8400-e29b-41d4-a716-446655440000
+  status: 1
+  created_at: 2011-09-21 15:24:29
+  updated_at: 2011-09-21 15:24:29
